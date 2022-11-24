@@ -5,14 +5,16 @@
 
 #include <iostream>
 using namespace std;
+
 class Punto
 {
 public:
+    static int NUM_P;
     Punto();
-    Punto(int, int);
+    Punto(int x, int y);
     int getX();
     int getY();
-    string to_String();
+    string toString();
 private:
     int x;
     int y;

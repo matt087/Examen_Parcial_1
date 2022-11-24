@@ -11,10 +11,10 @@ public:
     Linea();
     Linea(Punto *p1, Punto *p2);
     float getD();
-    string to_String();
+    float getM();
+    string toString();
     Punto *getP1();
     Punto *getP2();
-
 private:
     float d;
     float m;

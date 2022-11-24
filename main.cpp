@@ -6,16 +6,16 @@
 #include "linea.h"
 using namespace std;
 
+int Linea::NUM_LINEAS = 0;
+int Punto::NUM_P = 0;
 int main()
 {
-    Punto p(1,2);
-    Punto p2(6,1);
-    cout<<"Punto 1:\n";
-    cout<<p.to_String();
-    cout<<"\nPunto 2:\n";
-    cout<<p2.to_String();
-    Linea l(&p,&p2);
-    cout<<"\nLinea:\n";
-    cout<<l.to_String();
+    cout<<"\tCALCULADORA DISTANCIA Y PENDIENTE"<<endl;
+    Punto p1(-7,4);
+    cout<<p1.toString();
+    Punto p2(2,9);
+    cout<<p2.toString();
+    Linea l1(&p1,&p2);
+    cout<<l1.toString();
     return 0;
 }

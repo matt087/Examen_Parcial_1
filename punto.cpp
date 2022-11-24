@@ -2,9 +2,15 @@
 
 #include "punto.h"
 
-Punto::Punto(){}
+Punto::Punto()
+{
+    NUM_P++;
+}
 
-Punto::Punto (int x, int y): x(x), y(y){}
+Punto::Punto (int x, int y): x(x), y(y)
+{
+    NUM_P++;
+}
 
 int Punto::getX()
 {
@@ -15,8 +21,7 @@ int Punto::getY()
 {
     return y;
 }
-string Punto::to_String()
+string Punto::toString()
 {
-    return "Coordenada X: "+to_string(x)
-            +"\nCoordenada Y: "+to_string(y)+"\n";
+    return "P"+to_string(NUM_P)+": ("+to_string(x)+","+to_string(y)+")\n";
 }
