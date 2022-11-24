@@ -10,6 +10,7 @@ int Linea::NUM_LINEAS = 0;
 int Punto::NUM_P = 0;
 int main()
 {
+    cout<<"Mateo Montenegro\n"<<endl;
     cout<<"\tCALCULADORA DISTANCIA Y PENDIENTE"<<endl;
     Punto p1(-7,4);
     cout<<p1.toString();
